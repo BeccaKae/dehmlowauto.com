@@ -4,6 +4,7 @@
 <head>
 	<title>Dehmlow Auto Sales</title>
 
+<link rel="stylesheet" type="text/css" href="css/das.css">
 
 <map name="top_links">
 <area shape="rect" coords="320,25,370,47"
@@ -37,6 +38,14 @@
 
 </head>
 
+<div id="mobile-home">
+  <div id="mobile-sub-header">
+    &nbsp;
+  </div>
+    <a href="home"><img id="mobile-sub-logo" src="images/mobile_home_logo.png"/></a>
+</div>
+
+
 <body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" bgcolor="#999999"
  style="font-family: arial; sans serif; font-size: small;">
 
@@ -44,7 +53,9 @@
 
   <tr>
     <td width="50%" background="templates/das/images/top_left.jpg"></td>
-    <td background="templates/das/images/top_right.jpg"><img src="templates/das/images/top_center_subpage.jpg" usemap="#top_links" ISMAP border="0" /></td>
+
+    <td background="templates/das/images/top_right.jpg"><img id="header" src="templates/das/images/top_center_subpage.jpg" usemap="#top_links" ISMAP border="0" /></td>
+
     <td width="50%" background="templates/das/images/top_right.jpg"></td>
   </tr>
 
@@ -112,6 +123,7 @@ function view_photo(i) {
 
 <br>
 
+<div id="info">
 <table width="100%" border="0">
 
   <tr>
@@ -119,12 +131,37 @@ function view_photo(i) {
       2012 Volkswagen Routan<br /><img src="templates/das/images/blue_rule.gif" />
     </td>
 
+  </tr>
+
+  <tr>
+    <td class="pageheader"><img src="templates/das/images/spacer.gif" width="1" height="7" /></td>
+  </tr>
+
+
+<!-- VEHICLE DETAILS -->
+  <tr>
+    <td width="100%" valign="top">
+<nobr><strong>Color:</strong> Calla Lily White<nobr><br /><nobr><strong>Miles:</strong> 39988</nobr><br /><strong>Stock #:</strong> 355751<br /><strong>VIN:</strong> 2C4RVADG9CR355751<br /><br />2012 Volkswagen Routan, SEL Premium Pkg, Navigation, Dual Screen DVD Entertainment, Leather, Heated Front & Rear Seats, Power Sunroof, Dual Climate Control, Dual Power Seats w/Memory, Rear Heat & A/C, Premium Sound w/CD & Steering Controls, iPod USB Port, Sirius Satellite Radio, Power Sliding Doors/Liftgate, Side/Curtain Airbags, Traction Control, Bluetooth, Blind-Spot Monitoring, Remote Start, Park-Assist, Back-Up Camera, Rear Window Shades, Power Folding Rear Seats, Smartkey, Rain Sensing Wipers, Xenon HID Headlights, Alloy Wheels, Local Vehicle w/All The Options & Clean AutoCheck History!!<br><br>&nbsp;&bull;&nbsp;Ext. Service Policy Available<br /><br /><strong style="font-size: small;">$20,990</strong>
+
+<br /><br /><br />
+<strong>CONTACT US:</strong><br />
+Phone: (952) <span style=\"color: red;\">440 - CARS</span> (2277)<br />
+<a href="mailto:rocky@dehmlowauto.com">rocky@dehmlowauto.com</a><br /><br />
+<nobr>Highway 13 @ Dakota Street</nobr><br />
+<nobr>4810 Dakota Street</nobr><br />
+<nobr>P.O. Box 204</nobr><br />
+<nobr>Prior Lake, Minnesota 55372</nobr><br /><br />
+
+</td>
+
+  </tr>
+</table>
+</div>
 
 
 
-    <!-- PHOTOS -->
-    <td width="50%" align="center" valign="top" rowspan="3">
 
+<div id="photos">
 <table border="0" cellpadding="0" cellspacing="0">
   <tr>
     <td colspan="4" bgcolor="#000000"><img src="templates/das/images/000000_pixel.gif" width="322" height="1" /></td>
@@ -157,7 +194,15 @@ function view_photo(i) {
   </tr>
 
 </table>
-<br />
+
+<!--PHOTO PREVIOUS/NEXT-->
+<div style="text-align:center; padding:0 0 5px 0; font-size:11px; font-weight:bold;">
+<a href="javascript:view_photo(previous_photo);" class="next-prev">&#60; PREV</a>
+&nbsp;-&nbsp;
+<a href="javascript:view_photo(next_photo);" class="next-prev">NEXT &#62;</a>
+</div>
+
+
 <table>
   <tr>
     <td>
@@ -275,33 +320,8 @@ function view_photo(i) {
 </table>
 
 <span style="font-size: x-small;">Click small photo to enlarge.</span>
+</div>
 
-    </td>
-  </tr>
-
-  <tr>
-    <td class="pageheader"><img src="templates/das/images/spacer.gif" width="1" height="7" /></td>
-  </tr>
-
-
-<!-- VEHICLE DETAILS -->
-  <tr>
-    <td width="50%" valign="top">
-<nobr><strong>Color:</strong> Calla Lily White<nobr><br /><nobr><strong>Miles:</strong> 39988</nobr><br /><strong>Stock #:</strong> 355751<br /><strong>VIN:</strong> 2C4RVADG9CR355751<br /><br />2012 Volkswagen Routan, SEL Premium Pkg, Navigation, Dual Screen DVD Entertainment, Leather, Heated Front & Rear Seats, Power Sunroof, Dual Climate Control, Dual Power Seats w/Memory, Rear Heat & A/C, Premium Sound w/CD & Steering Controls, iPod USB Port, Sirius Satellite Radio, Power Sliding Doors/Liftgate, Side/Curtain Airbags, Traction Control, Bluetooth, Blind-Spot Monitoring, Remote Start, Park-Assist, Back-Up Camera, Rear Window Shades, Power Folding Rear Seats, Smartkey, Rain Sensing Wipers, Xenon HID Headlights, Alloy Wheels, Local Vehicle w/All The Options & Clean AutoCheck History!!<br><br>&nbsp;&bull;&nbsp;Ext. Service Policy Available<br /><br /><strong style="font-size: small;">$20,990</strong>
-
-<br /><br /><br /><br />
-<strong>CONTACT US:</strong><br />
-Phone: (952) <span style=\"color: red;\">440 - CARS</span> (2277)<br />
-<a href="mailto:rocky@dehmlowauto.com">rocky@dehmlowauto.com</a><br /><br />
-<nobr>Highway 13 @ Dakota Street</nobr><br />
-<nobr>4810 Dakota Street</nobr><br />
-<nobr>P.O. Box 204</nobr><br />
-<nobr>Prior Lake, Minnesota 55372</nobr><br /><br />
-
-</td>
-
-  </tr>
-</table>
 <br /><br />
 </td>
     <td></td>
@@ -309,13 +329,42 @@ Phone: (952) <span style=\"color: red;\">440 - CARS</span> (2277)<br />
 
   <tr>
     <td width="50%" background="templates/das/images/bottom_left.jpg"></td>
-    <td background="templates/das/images/bottom_right.jpg"><img 
+
+    <td background="templates/das/images/bottom_right.jpg"><img id="footer" 
      src="templates/das/images/bottom_center.jpg" border="0"  
 usemap="#bottom_links" ISMAP /></td>
+
     <td width="50%" background="templates/das/images/bottom_right.jpg"></td>
   </tr>
 
 </table>
+
+
+
+
+
+<!--MOBILE FOOTER-->
+<div id="mobile-footer">
+  <div style="padding:0 0 15px 0;">
+    <span style="font-size:11px; font-weight:bold;">CALL:</span>
+    <span style="font-size:16px; font-weight:bold; color:#800000;">(925) 440-CARS</span>  (2277)<br />
+    
+    <span style="font-size:11px; font-weight:bold;">EMAIL:</span>
+    <a href="EMAIL" style="font-size:14px;">rocky@dehmlowauto.com</a>
+  </div>
+
+  <div style="font-size:14px; padding:0 0 3px 0; font-weight:bold;">
+    Located at Highway 13 &amp; Dakota Street
+  </div>
+  4810 Dakota Street - P.O. Box 204<br />
+  Prior Lake, MN 55372<br />
+  Copyright &copy; 2015 - All Rights Reserved -
+  Powered by <a href="http://www.autoadmin.net/">AutoADMIN</a>
+</div>
+<div id="footer-images">
+  <img style="padding:3px 0 0 0;" src="images/mobile_footer_das_logo.gif"/>
+  <img style="float:right;" src="images/mobile_footer_located.png"/>
+</div>
 
 </body>
 </html>

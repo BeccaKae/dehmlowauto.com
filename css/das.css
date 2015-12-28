@@ -1,0 +1,180 @@
+a {
+  text-decoration: none;
+  color:#000099;
+}
+ 
+a:hover {
+  text-decoration: none;
+  color:##0033cc;
+}
+
+
+
+/*MOBILE HOME*/
+#mobile-home {
+  display: none;
+}
+
+#mobile-footer {
+  display: none;
+}
+
+#footer-images {
+  display: none;
+}
+
+#mobile-links {
+  padding:11px 0; 
+  border-bottom: solid 1px #000099;
+  background-image: url("../templates/das/images/mobile_header_bg.png");
+  background-position: left top;
+  background-repeat:no-repeat;
+  background-color: #979acd;
+}
+
+#mobile-links a {
+  padding:0 4% 0 0;
+  font-size: 11px;
+  color:#FFF;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+img#mobile-logo {
+  padding:10px 0 8px 0;
+  width:55%;
+}
+
+#mobile-sub-header {
+  height: 40px; 
+  border-bottom: solid 1px #000099;
+  background-image: url("../templates/das/images/mobile_header_bg.png");
+  background-position: left top;
+  background-repeat:no-repeat;
+  background-color: #979acd;
+}
+
+img#mobile-sub-logo {
+  margin:-35px 0 0 0;
+  width:30%;
+}
+
+a.mobile-home-vehicles {
+   display: block;
+   margin:5px 0;    
+   padding:15px 0;    
+   width: 100%;
+   background-color: gray;
+   color: #FFF;
+   text-decoration:none;
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
+/*DETAILS*/
+#info {
+   display: table-cell;    
+}
+
+#photos {
+   display: table-cell;    
+}
+
+
+/*LIST*/
+#list_header {
+   display: table-cell;    
+   padding:10px 0 10px 0;
+}
+
+#list_sort {
+   display: table-cell;    
+   text-align: right;
+}
+
+.list_container {
+  display: table-cell;
+}
+
+.list-cell {
+  display:table-cell;
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+      background-color: #979acd;
+    }
+
+    a {
+      font-size:11px;
+      font-weight: bold; 
+    }
+
+    #home {
+      display: none;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #footer {
+        display: none;
+    }
+
+    #mobile-home {
+      display: block;
+      background-color: #fff;
+      text-align: center;
+      padding:0 0 1px 0;
+    }
+
+    #mobile-footer {
+      margin:0 20px 0 20px;
+      padding:20px 0 20px 0;
+      display: block;
+      text-align: center;
+      font-size: 11px;
+      color:#FFF;
+      border-bottom: solid 1px gray;
+    }
+
+    #footer-images {
+      display: block;
+      margin:10px 20px 0 20px;
+    }
+
+    #info {
+       display: block;    
+    }
+
+    #photos {
+       display: block;    
+    }
+    
+    #list_header {
+       display: block;    
+    }
+
+    #list_sort {
+       display: block;    
+     text-align: left;
+       padding:0 0 10px 0;
+    }
+
+    .list_container {
+      display: block;
+    }
+
+}
+
+
+
+@media (max-width: 400px) {
+
+    .list-cell {
+      display: block;
+    }
+}
