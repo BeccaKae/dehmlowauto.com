@@ -35,19 +35,23 @@
 </map>
 
 
-
 </head>
 
+
+<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" bgcolor="#999999"
+ style="font-family: arial; sans serif; font-size: small;">
+
+<!--MOBILE SUB HEADER-->
 <div id="mobile-home">
   <div id="mobile-sub-header">
     &nbsp;
   </div>
     <a href="home"><img id="mobile-sub-logo" src="images/mobile_home_logo.png"/></a>
 </div>
+<!--END MOBILE SUB HEADER-->
 
 
-<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" bgcolor="#999999"
- style="font-family: arial; sans serif; font-size: small;">
+
 
 <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" border="0">
 
@@ -114,8 +118,18 @@ images_22.src = 'photos/20151218155543_2012_Volkswagen_Routan__4_659261.jpg';
 var images_23 = new Image(700, 525);
 images_23.src = 'photos/20151218155543_2012_Volkswagen_Routan__7_543434.jpg';
 
+var current_photo = 0;
+var last_photo = 37;
+var previous_photo = last_photo;
+var next_photo = 1;
+
 function view_photo(i) {
-  if ( !isNaN(i) ) { eval('document.photo.src = images_' + i + '.src;'); }
+  current_photo = i;
+  if ( 0 >= current_photo ) { previous_photo = last_photo; }
+  else { previous_photo = current_photo - 1; }
+  if ( last_photo <= current_photo ) { next_photo = 0; }
+  else { next_photo = (parseInt(current_photo) + 1); }
+  eval('document.photo.src = images_' + i + '.src;');
 }
 
 // ]]>
@@ -197,9 +211,9 @@ Phone: (952) <span style=\"color: red;\">440 - CARS</span> (2277)<br />
 
 <!--PHOTO PREVIOUS/NEXT-->
 <div style="text-align:center; padding:0 0 5px 0; font-size:11px; font-weight:bold;">
-<a href="javascript:view_photo(previous_photo);" class="next-prev">&#60; PREV</a>
+<a href="javascript:view_photo(previous_photo);">&#60; PREV</a>
 &nbsp;-&nbsp;
-<a href="javascript:view_photo(next_photo);" class="next-prev">NEXT &#62;</a>
+<a href="javascript:view_photo(next_photo);">NEXT &#62;</a>
 </div>
 
 
@@ -350,7 +364,7 @@ usemap="#bottom_links" ISMAP /></td>
     <span style="font-size:16px; font-weight:bold; color:#800000;">(925) 440-CARS</span>  (2277)<br />
     
     <span style="font-size:11px; font-weight:bold;">EMAIL:</span>
-    <a href="EMAIL" style="font-size:14px;">rocky@dehmlowauto.com</a>
+    <a href="mailto:rocky@dehmlowauto.com style="font-size:14px;">rocky@dehmlowauto.com</a>
   </div>
 
   <div style="font-size:14px; padding:0 0 3px 0; font-weight:bold;">
